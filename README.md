@@ -1,4 +1,4 @@
-# Blog OS (Hardware Interrupts)
+# Blog OS
 
 from [blog-os](https://github.com/phil-opp/blog_os)
 
