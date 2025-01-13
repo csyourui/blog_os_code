@@ -170,7 +170,6 @@ pub fn _print(args: fmt::Arguments) {
     WRITER.lock().write_fmt(args).unwrap();
 }
 
-
 #[test_case]
 fn test_println_output() {
     let s = "Some test string that fits on a single line";

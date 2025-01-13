@@ -6,7 +6,7 @@
 
 use core::panic::PanicInfo;
 
-use blog_os::{exit_qemu, QemuExitCode, serial_println, serial_print};
+use blog_os::{exit_qemu, serial_print, serial_println, QemuExitCode};
 
 #[panic_handler]
 fn panic(_info: &PanicInfo) -> ! {
@@ -31,7 +31,6 @@ pub fn test_runner(tests: &[&dyn Fn()]) {
     }
     exit_qemu(QemuExitCode::Success);
 }
-
 
 #[test_case]
 fn should_fail() {

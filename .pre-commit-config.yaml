@@ -1,0 +1,12 @@
+repos:
+  - repo: local
+    hooks:
+      - id: cargo-fmt
+        name: cargo fmt
+        entry: cargo fmt --
+        language: system
+        types: [rust]
+  - repo: https://github.com/DevinR528/cargo-sort
+    rev: v1.1.0
+    hooks:
+    - id: cargo-sort
