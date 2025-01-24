@@ -2,6 +2,10 @@
 
 from [blog-os](https://github.com/phil-opp/blog_os)
 
+```shell
+rustc default nightly
+```
+
 ## License
 
 Licensed under either of
